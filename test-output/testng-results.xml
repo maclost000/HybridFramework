@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="6" failed="0" skipped="3">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-15T17:53:10 IST" name="Suite" finished-at="2022-01-15T17:56:37 IST" duration-ms="207546">
+    <groups>
+    </groups>
+    <test started-at="2022-01-15T17:53:10 IST" name="EcommerceAppTest" finished-at="2022-01-15T17:56:37 IST" duration-ms="207512">
+      <class name="appium.framework.ScrollAndSelect">
+        <test-method signature="ScrollSelect()[pri:0, instance:appium.framework.ScrollAndSelect@65c7a252]" started-at="2022-01-15T17:55:58 IST" name="ScrollSelect" finished-at="2022-01-15T17:56:37 IST" duration-ms="39442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScrollSelect -->
+      </class> <!-- appium.framework.ScrollAndSelect -->
+      <class name="appium.framework.sumOfProduct">
+        <test-method signature="totalValidation()[pri:0, instance:appium.framework.sumOfProduct@18df8434]" started-at="2022-01-15T17:55:21 IST" name="totalValidation" finished-at="2022-01-15T17:55:58 IST" duration-ms="36354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- totalValidation -->
+      </class> <!-- appium.framework.sumOfProduct -->
+      <class name="appium.framework.WebViewCheck">
+        <test-method signature="webAutomation()[pri:0, instance:appium.framework.WebViewCheck@5677323c]" started-at="2022-01-15T17:54:36 IST" name="webAutomation" finished-at="2022-01-15T17:55:21 IST" duration-ms="44948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webAutomation -->
+      </class> <!-- appium.framework.WebViewCheck -->
+      <class name="appium.framework.VerifyToastMessage">
+        <test-method signature="toastMessage()[pri:0, instance:appium.framework.VerifyToastMessage@5824a83d]" started-at="2022-01-15T17:53:51 IST" name="toastMessage" finished-at="2022-01-15T17:54:08 IST" duration-ms="16517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toastMessage -->
+      </class> <!-- appium.framework.VerifyToastMessage -->
+      <class name="appium.framework.CheckHomePage">
+        <test-method is-config="true" signature="killServer()[pri:0, instance:appium.framework.CheckHomePage@6fdbe764]" started-at="2022-01-15T17:53:10 IST" name="killServer" finished-at="2022-01-15T17:53:16 IST" duration-ms="6025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killServer -->
+        <test-method signature="verifyHome()[pri:0, instance:appium.framework.CheckHomePage@6fdbe764]" started-at="2022-01-15T17:53:16 IST" name="verifyHome" finished-at="2022-01-15T17:53:51 IST" duration-ms="35636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHome -->
+      </class> <!-- appium.framework.CheckHomePage -->
+      <class name="appium.framework.VerifyLogin">
+        <test-method signature="verifyLoginFunction()[pri:0, instance:appium.framework.VerifyLogin@537f60bf]" started-at="2022-01-15T17:54:08 IST" name="verifyLoginFunction" finished-at="2022-01-15T17:54:36 IST" duration-ms="28569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFunction -->
+      </class> <!-- appium.framework.VerifyLogin -->
+    </test> <!-- EcommerceAppTest -->
+    <test started-at="2022-01-15T17:56:37 IST" name="APIDemosTest" finished-at="2022-01-15T17:56:37 IST" duration-ms="7">
+      <class name="apiDemosApp.SetTime">
+        <test-method signature="timeSettings()[pri:0, instance:apiDemosApp.SetTime@74d1dc36]" started-at="2022-01-15T17:56:37 IST" name="timeSettings" finished-at="2022-01-15T17:56:37 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Cannot run program "C:\Users\joelv\eclipse-workspace2\framework\src\main\java\resources\killserver.bat": CreateProcess error=2, The system cannot find the file specified]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Cannot run program "C:\Users\joelv\eclipse-workspace2\framework\src\main\java\resources\killserver.bat": CreateProcess error=2, The system cannot find the file specified
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1142)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+at java.base/java.lang.Runtime.exec(Runtime.java:591)
+at java.base/java.lang.Runtime.exec(Runtime.java:415)
+at java.base/java.lang.Runtime.exec(Runtime.java:312)
+at apiDemosApp.AccessWifi.killServer(AccessWifi.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+at java.base/java.lang.ProcessImpl.create(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:483)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1109)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timeSettings -->
+      </class> <!-- apiDemosApp.SetTime -->
+      <class name="apiDemosApp.DragAndDrop">
+        <test-method signature="dragDrop()[pri:0, instance:apiDemosApp.DragAndDrop@75d3a5e0]" started-at="2022-01-15T17:56:37 IST" name="dragDrop" finished-at="2022-01-15T17:56:37 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Cannot run program "C:\Users\joelv\eclipse-workspace2\framework\src\main\java\resources\killserver.bat": CreateProcess error=2, The system cannot find the file specified]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Cannot run program "C:\Users\joelv\eclipse-workspace2\framework\src\main\java\resources\killserver.bat": CreateProcess error=2, The system cannot find the file specified
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1142)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+at java.base/java.lang.Runtime.exec(Runtime.java:591)
+at java.base/java.lang.Runtime.exec(Runtime.java:415)
+at java.base/java.lang.Runtime.exec(Runtime.java:312)
+at apiDemosApp.AccessWifi.killServer(AccessWifi.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+at java.base/java.lang.ProcessImpl.create(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:483)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1109)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragDrop -->
+      </class> <!-- apiDemosApp.DragAndDrop -->
+      <class name="apiDemosApp.AccessWifi">
+        <test-method is-config="true" signature="killServer()[pri:0, instance:apiDemosApp.AccessWifi@1ca3b418]" started-at="2022-01-15T17:56:37 IST" name="killServer" finished-at="2022-01-15T17:56:37 IST" duration-ms="0" status="FAIL">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Cannot run program "C:\Users\joelv\eclipse-workspace2\framework\src\main\java\resources\killserver.bat": CreateProcess error=2, The system cannot find the file specified]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Cannot run program "C:\Users\joelv\eclipse-workspace2\framework\src\main\java\resources\killserver.bat": CreateProcess error=2, The system cannot find the file specified
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1142)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+at java.base/java.lang.Runtime.exec(Runtime.java:591)
+at java.base/java.lang.Runtime.exec(Runtime.java:415)
+at java.base/java.lang.Runtime.exec(Runtime.java:312)
+at apiDemosApp.AccessWifi.killServer(AccessWifi.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+at java.base/java.lang.ProcessImpl.create(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:483)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1109)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killServer -->
+        <test-method signature="wifiAccess()[pri:0, instance:apiDemosApp.AccessWifi@1ca3b418]" started-at="2022-01-15T17:56:37 IST" name="wifiAccess" finished-at="2022-01-15T17:56:37 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Cannot run program "C:\Users\joelv\eclipse-workspace2\framework\src\main\java\resources\killserver.bat": CreateProcess error=2, The system cannot find the file specified]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Cannot run program "C:\Users\joelv\eclipse-workspace2\framework\src\main\java\resources\killserver.bat": CreateProcess error=2, The system cannot find the file specified
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1142)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+at java.base/java.lang.Runtime.exec(Runtime.java:591)
+at java.base/java.lang.Runtime.exec(Runtime.java:415)
+at java.base/java.lang.Runtime.exec(Runtime.java:312)
+at apiDemosApp.AccessWifi.killServer(AccessWifi.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+at java.base/java.lang.ProcessImpl.create(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:483)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1109)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wifiAccess -->
+      </class> <!-- apiDemosApp.AccessWifi -->
+    </test> <!-- APIDemosTest -->
+  </suite> <!-- Suite -->
+</testng-results>

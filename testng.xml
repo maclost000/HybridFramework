@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="appium.framework.Listeners"/>
+<listener class-name="resources.ExtentReporterNG"/>
+
+</listeners>
+
+  <test thread-count="5" name="EcommerceAppTest">
+    <classes>
+      <class name="appium.framework.CheckHomePage"/>
+      <class name="appium.framework.VerifyToastMessage"/>
+      <class name="appium.framework.VerifyLogin"/>
+      <class name="appium.framework.WebViewCheck"/>
+       <class name="appium.framework.sumOfProduct"/>
+     <class name="appium.framework.ScrollAndSelect"/>
+      
+    </classes>
+  </test>
+  <test name="APIDemosTest">
+  <classes>
+   <class name="apiDemosApp.AccessWifi"/>
+    <class name="apiDemosApp.DragAndDrop"/>
+     <class name="apiDemosApp.SetTime"/>
+  </classes>
+  </test>
+   <!-- Test -->
+</suite> <!-- Suite -->

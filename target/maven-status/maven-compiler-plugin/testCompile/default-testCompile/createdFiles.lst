@@ -1,0 +1,9 @@
+apiDemosApp\DragAndDrop.class
+apiDemosApp\AccessWifi.class
+appium\framework\ScrollAndSelect.class
+appium\framework\VerifyLogin.class
+apiDemosApp\SetTime.class
+appium\framework\sumOfProduct.class
+appium\framework\VerifyToastMessage.class
+appium\framework\WebViewCheck.class
+appium\framework\CheckHomePage.class
