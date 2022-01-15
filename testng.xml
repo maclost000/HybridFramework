@@ -23,6 +23,7 @@
    <class name="apiDemosApp.AccessWifi"/>
     <class name="apiDemosApp.DragAndDrop"/>
      <class name="apiDemosApp.SetTime"/>
+     <class name="apiDemosApp.Gestures"/>
   </classes>
   </test>
    <!-- Test -->
