@@ -5,24 +5,19 @@
     <listener class-name="appium.framework.Listeners"/>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="APIDemosTest(failed)">
+  <test thread-count="5" name="EcommerceAppTest(failed)">
+    <parameter name="itemName" value="Shoes"/>
+    <groups>
+      <run>
+        <include name="SmokeTest"/>
+      </run>
+    </groups>
     <classes>
-      <class name="apiDemosApp.SetTime">
+      <class name="appium.framework.WebViewCheckTest">
         <methods>
-          <include name="timeSettings"/>
+          <include name="webAutomation"/>
         </methods>
-      </class> <!-- apiDemosApp.SetTime -->
-      <class name="apiDemosApp.AccessWifi">
-        <methods>
-          <include name="wifiAccess"/>
-          <include name="killServer"/>
-        </methods>
-      </class> <!-- apiDemosApp.AccessWifi -->
-      <class name="apiDemosApp.DragAndDrop">
-        <methods>
-          <include name="dragDrop"/>
-        </methods>
-      </class> <!-- apiDemosApp.DragAndDrop -->
+      </class> <!-- appium.framework.WebViewCheckTest -->
     </classes>
-  </test> <!-- APIDemosTest(failed) -->
+  </test> <!-- EcommerceAppTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

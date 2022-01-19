@@ -1,3 +1,13 @@
 appium\framework\Listeners.class
-appium\framework\Dependencies.class
+apiDemosPageObjects\DragAndDropPage.class
+ecommercePageObjects\HomePage.class
+ecommercePageObjects\LoginPage.class
 resources\ExtentReporterNG.class
+appium\framework\Dependencies.class
+appium\framework\Utilities.class
+apiDemosPageObjects\SwitchPage.class
+apiDemosPageObjects\DateWidgetPage.class
+apiDemosPageObjects\PreferenceDependenciesPage.class
+ecommercePageObjects\CartPage.class
+apiDemosPageObjects\HomePage.class
+ecommercePageObjects\WebPage.class

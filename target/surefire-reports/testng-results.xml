@@ -1,75 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="273129" started-at="2022-01-15T17:57:23 IST" finished-at="2022-01-15T18:01:57 IST">
+  <suite name="Suite" duration-ms="305131" started-at="2022-01-19T16:14:23 IST" finished-at="2022-01-19T16:19:28 IST">
     <groups>
     </groups>
-    <test name="EcommerceAppTest" duration-ms="211182" started-at="2022-01-15T17:57:23 IST" finished-at="2022-01-15T18:00:55 IST">
-      <class name="appium.framework.ScrollAndSelect">
-        <test-method status="PASS" signature="ScrollSelect()[pri:0, instance:appium.framework.ScrollAndSelect@25bbf683]" name="ScrollSelect" duration-ms="39208" started-at="2022-01-15T18:00:15 IST" finished-at="2022-01-15T18:00:55 IST">
+    <test name="EcommerceAppTest" duration-ms="220249" started-at="2022-01-19T16:14:23 IST" finished-at="2022-01-19T16:18:03 IST">
+      <class name="appium.framework.ScrollAndSelectTest">
+        <test-method status="PASS" signature="ScrollSelect()[pri:0, instance:appium.framework.ScrollAndSelectTest@150c158]" name="ScrollSelect" duration-ms="39035" started-at="2022-01-19T16:17:24 IST" finished-at="2022-01-19T16:18:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScrollSelect -->
-      </class> <!-- appium.framework.ScrollAndSelect -->
-      <class name="appium.framework.sumOfProduct">
-        <test-method status="PASS" signature="totalValidation()[pri:0, instance:appium.framework.sumOfProduct@64485a47]" name="totalValidation" duration-ms="36648" started-at="2022-01-15T17:59:39 IST" finished-at="2022-01-15T18:00:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- totalValidation -->
-      </class> <!-- appium.framework.sumOfProduct -->
-      <class name="appium.framework.WebViewCheck">
-        <test-method status="PASS" signature="webAutomation()[pri:0, instance:appium.framework.WebViewCheck@1990a65e]" name="webAutomation" duration-ms="45081" started-at="2022-01-15T17:58:54 IST" finished-at="2022-01-15T17:59:39 IST">
+      </class> <!-- appium.framework.ScrollAndSelectTest -->
+      <class name="appium.framework.WebViewCheckTest">
+        <test-method status="PASS" signature="webAutomation()[pri:0, instance:appium.framework.WebViewCheckTest@544a2ea6]" name="webAutomation" duration-ms="52104" started-at="2022-01-19T16:15:53 IST" finished-at="2022-01-19T16:16:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webAutomation -->
-      </class> <!-- appium.framework.WebViewCheck -->
-      <class name="appium.framework.VerifyToastMessage">
-        <test-method status="PASS" signature="toastMessage()[pri:0, instance:appium.framework.VerifyToastMessage@42607a4f]" name="toastMessage" duration-ms="17915" started-at="2022-01-15T17:58:06 IST" finished-at="2022-01-15T17:58:24 IST">
+      </class> <!-- appium.framework.WebViewCheckTest -->
+      <class name="appium.framework.SumOfProductTest">
+        <test-method status="PASS" signature="totalValidation()[pri:0, instance:appium.framework.SumOfProductTest@2e3fc542]" name="totalValidation" duration-ms="38272" started-at="2022-01-19T16:16:45 IST" finished-at="2022-01-19T16:17:24 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- toastMessage -->
-      </class> <!-- appium.framework.VerifyToastMessage -->
-      <class name="appium.framework.CheckHomePage">
-        <test-method status="PASS" signature="killServer()[pri:0, instance:appium.framework.CheckHomePage@2de8284b]" name="killServer" is-config="true" duration-ms="6020" started-at="2022-01-15T17:57:23 IST" finished-at="2022-01-15T17:57:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killServer -->
-        <test-method status="PASS" signature="verifyHome()[pri:0, instance:appium.framework.CheckHomePage@2de8284b]" name="verifyHome" duration-ms="36536" started-at="2022-01-15T17:57:29 IST" finished-at="2022-01-15T17:58:06 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHome -->
-      </class> <!-- appium.framework.CheckHomePage -->
-      <class name="appium.framework.VerifyLogin">
-        <test-method status="PASS" signature="verifyLoginFunction()[pri:0, instance:appium.framework.VerifyLogin@782663d3]" name="verifyLoginFunction" duration-ms="29753" started-at="2022-01-15T17:58:24 IST" finished-at="2022-01-15T17:58:54 IST">
+        </test-method> <!-- totalValidation -->
+      </class> <!-- appium.framework.SumOfProductTest -->
+      <class name="appium.framework.VerifyLoginTest">
+        <test-method status="PASS" signature="verifyLoginFunction()[pri:0, instance:appium.framework.VerifyLoginTest@7276c8cd]" name="verifyLoginFunction" duration-ms="29908" started-at="2022-01-19T16:15:23 IST" finished-at="2022-01-19T16:15:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginFunction -->
-      </class> <!-- appium.framework.VerifyLogin -->
-    </test> <!-- EcommerceAppTest -->
-    <test name="APIDemosTest" duration-ms="61932" started-at="2022-01-15T18:00:55 IST" finished-at="2022-01-15T18:01:57 IST">
-      <class name="apiDemosApp.SetTime">
-        <test-method status="PASS" signature="timeSettings()[pri:0, instance:apiDemosApp.SetTime@6dde5c8c]" name="timeSettings" duration-ms="19982" started-at="2022-01-15T18:01:37 IST" finished-at="2022-01-15T18:01:57 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- timeSettings -->
-      </class> <!-- apiDemosApp.SetTime -->
-      <class name="apiDemosApp.DragAndDrop">
-        <test-method status="PASS" signature="dragDrop()[pri:0, instance:apiDemosApp.DragAndDrop@6fb0d3ed]" name="dragDrop" duration-ms="22051" started-at="2022-01-15T18:01:14 IST" finished-at="2022-01-15T18:01:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dragDrop -->
-      </class> <!-- apiDemosApp.DragAndDrop -->
-      <class name="apiDemosApp.AccessWifi">
-        <test-method status="PASS" signature="killServer()[pri:0, instance:apiDemosApp.AccessWifi@fe18270]" name="killServer" is-config="true" duration-ms="4020" started-at="2022-01-15T18:00:55 IST" finished-at="2022-01-15T18:00:59 IST">
+      </class> <!-- appium.framework.VerifyLoginTest -->
+      <class name="appium.framework.CheckHomePageTest">
+        <test-method status="PASS" signature="killServer()[pri:0, instance:appium.framework.CheckHomePageTest@365185bd]" name="killServer" is-config="true" duration-ms="7024" started-at="2022-01-19T16:14:23 IST" finished-at="2022-01-19T16:14:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killServer -->
-        <test-method status="PASS" signature="wifiAccess()[pri:0, instance:apiDemosApp.AccessWifi@fe18270]" name="wifiAccess" duration-ms="15878" started-at="2022-01-15T18:00:59 IST" finished-at="2022-01-15T18:01:14 IST">
+        <test-method status="PASS" signature="verifyHome(java.lang.String)[pri:0, instance:appium.framework.CheckHomePageTest@365185bd]" name="verifyHome" duration-ms="33965" started-at="2022-01-19T16:14:30 IST" finished-at="2022-01-19T16:15:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shoes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHome -->
+      </class> <!-- appium.framework.CheckHomePageTest -->
+      <class name="appium.framework.VerifyToastMessageTest">
+        <test-method status="PASS" signature="toastMessage()[pri:0, instance:appium.framework.VerifyToastMessageTest@6ec8211c]" name="toastMessage" duration-ms="19907" started-at="2022-01-19T16:15:04 IST" finished-at="2022-01-19T16:15:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toastMessage -->
+      </class> <!-- appium.framework.VerifyToastMessageTest -->
+    </test> <!-- EcommerceAppTest -->
+    <test name="APIDemosTest" duration-ms="84866" started-at="2022-01-19T16:18:03 IST" finished-at="2022-01-19T16:19:28 IST">
+      <class name="apiDemosApp.DragAndDropTest">
+        <test-method status="PASS" signature="dragDrop()[pri:0, instance:apiDemosApp.DragAndDropTest@68ceda24]" name="dragDrop" duration-ms="24082" started-at="2022-01-19T16:18:25 IST" finished-at="2022-01-19T16:18:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragDrop -->
+      </class> <!-- apiDemosApp.DragAndDropTest -->
+      <class name="apiDemosApp.GesturesTest">
+        <test-method status="PASS" signature="tapCheckBox()[pri:0, instance:apiDemosApp.GesturesTest@35a50a4c]" name="tapCheckBox" duration-ms="16604" started-at="2022-01-19T16:19:11 IST" finished-at="2022-01-19T16:19:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tapCheckBox -->
+      </class> <!-- apiDemosApp.GesturesTest -->
+      <class name="apiDemosApp.AccessWifiTest">
+        <test-method status="PASS" signature="killServer()[pri:0, instance:apiDemosApp.AccessWifiTest@24b1d79b]" name="killServer" is-config="true" duration-ms="4019" started-at="2022-01-19T16:18:03 IST" finished-at="2022-01-19T16:18:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killServer -->
+        <test-method status="PASS" signature="wifiAccess()[pri:0, instance:apiDemosApp.AccessWifiTest@24b1d79b]" name="wifiAccess" duration-ms="18070" started-at="2022-01-19T16:18:07 IST" finished-at="2022-01-19T16:18:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wifiAccess -->
-      </class> <!-- apiDemosApp.AccessWifi -->
+      </class> <!-- apiDemosApp.AccessWifiTest -->
+      <class name="apiDemosApp.SetTimeTest">
+        <test-method status="PASS" signature="timeSettings()[pri:0, instance:apiDemosApp.SetTimeTest@281e3708]" name="timeSettings" duration-ms="22090" started-at="2022-01-19T16:18:49 IST" finished-at="2022-01-19T16:19:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timeSettings -->
+      </class> <!-- apiDemosApp.SetTimeTest -->
     </test> <!-- APIDemosTest -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apiDemosApp.Gestures">
+      <class name="appium.framework.WebViewCheckTest">
         <methods>
-          <include name="tapCheckBox"/>
+          <include name="webAutomation"/>
         </methods>
-      </class> <!-- apiDemosApp.Gestures -->
+      </class> <!-- appium.framework.WebViewCheckTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

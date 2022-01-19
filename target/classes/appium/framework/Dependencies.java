@@ -33,7 +33,7 @@ public class Dependencies {
 		{
 		service = AppiumDriverLocalService.buildDefaultService();
 		service.start();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		}
 		return service;
 	}
@@ -78,7 +78,7 @@ public class Dependencies {
 		cap.setCapability("appium:chromeOptions", ImmutableMap.of("w3c", false));
 		
 		 driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
 		return driver;
 
 	}
