@@ -17,8 +17,8 @@ public class ScrollAndSelectTest extends Dependencies{
 	@Test()
 	public void ScrollSelect() throws InterruptedException, IOException
 	{
-		service=startServer();
-		AndroidDriver<AndroidElement> driver = capabilities("GeneralStoreApp");
+		//service=startServer();
+		AndroidDriver<AndroidElement> driver = runcloudcapabilities("GeneralStoreApp", true);
 		LoginPage login = new LoginPage(driver);
 		login.nameField.sendKeys("brandShoes");
 		
@@ -53,6 +53,6 @@ public class ScrollAndSelectTest extends Dependencies{
 			}
 			
 		}
-		service.stop();
+		//service.stop();
 	}
 }

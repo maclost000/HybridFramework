@@ -21,8 +21,8 @@ public class DragAndDropTest extends Dependencies {
 	@Test
 	public void dragDrop() throws InterruptedException, IOException
 	{
-		service=startServer();
-		AndroidDriver<AndroidElement> driver = capabilities("ApiDemosApp");
+		//service=startServer();
+		AndroidDriver<AndroidElement> driver = runcloudcapabilities("ApiDemosApp", true);
 		
 		HomePage home = new HomePage(driver);
 		home.views.click();
@@ -39,7 +39,7 @@ public class DragAndDropTest extends Dependencies {
 		
 		String dragResult =  dragDrop.resultMessage.getText();
 		System.out.println("Message displayed is: "+dragResult);
-		service.stop();
+		//service.stop();
 	}
 
 }

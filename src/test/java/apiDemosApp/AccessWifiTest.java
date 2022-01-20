@@ -21,9 +21,9 @@ public class AccessWifiTest extends Dependencies {
 	public void wifiAccess() throws InterruptedException, IOException
 	
 	{
-		service=startServer();
+		//service=startServer();
 		
-		AndroidDriver<AndroidElement> driver = capabilities("ApiDemosApp");
+		AndroidDriver<AndroidElement> driver = runcloudcapabilities("ApiDemosApp", true);
 		
 		HomePage prefer = new HomePage(driver);
 		prefer.preference.click();
@@ -44,9 +44,9 @@ public class AccessWifiTest extends Dependencies {
 		
 		prefer1.oKButton.click();
 		
-		service.stop();
+		//service.stop();
 	}
-	@BeforeTest
+	//@BeforeTest
 	public void killServer() throws IOException, InterruptedException
 	{
 		Runtime.getRuntime().exec("taskkill /F /IM node.exe");

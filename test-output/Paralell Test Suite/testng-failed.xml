@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Paralell Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="SecTest(failed)">
+    <classes>
+      <class name="appium.framework.SumOfProductTest">
+        <methods>
+          <include name="totalValidation"/>
+        </methods>
+      </class> <!-- appium.framework.SumOfProductTest -->
+    </classes>
+  </test> <!-- SecTest(failed) -->
+  <test thread-count="5" parallel="tests" name="EcommerceAppTest(failed)">
+    <classes>
+      <class name="appium.framework.WebViewCheckTest">
+        <methods>
+          <include name="webAutomation"/>
+        </methods>
+      </class> <!-- appium.framework.WebViewCheckTest -->
+    </classes>
+  </test> <!-- EcommerceAppTest(failed) -->
+</suite> <!-- Failed suite [Paralell Test Suite] -->

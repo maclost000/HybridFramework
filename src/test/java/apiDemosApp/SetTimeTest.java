@@ -26,8 +26,8 @@ public class SetTimeTest extends Dependencies {
 	@Test()
 	public void timeSettings() throws InterruptedException, IOException
 	{
-		service=startServer();
-		AndroidDriver<AndroidElement> driver = capabilities("ApiDemosApp");
+		//service=startServer();
+		AndroidDriver<AndroidElement> driver = runcloudcapabilities("ApiDemosApp", true);
 		
 		HomePage home = new HomePage(driver);
 		home.views.click();
@@ -53,6 +53,6 @@ public class SetTimeTest extends Dependencies {
 		System.out.println("Current Minutes is: "+ minutes);
 		
 		System.out.println("Label status: "+ date.minute.getText());
-		service.stop();
+		//service.stop();
 	}
 }

@@ -17,8 +17,8 @@ public class VerifyToastMessageTest extends Dependencies {
 	@Test
 	public void toastMessage() throws IOException, InterruptedException
 	{
-		service=startServer();
-		AndroidDriver<AndroidElement> driver = capabilities("GeneralStoreApp");
+		//service=startServer();
+		AndroidDriver<AndroidElement> driver = runcloudcapabilities("GeneralStoreApp", true);
 		LoginPage login = new LoginPage(driver);
 		login.nameField.sendKeys("brandShoes");
 		
@@ -31,7 +31,7 @@ public class VerifyToastMessageTest extends Dependencies {
 	    login.submitButton.click();	    
 	    String toastMessage = login.toastMessage.getAttribute("Name");
 	    System.out.println("Error Message is: "+toastMessage);
-	    service.stop();
+	    //service.stop();
 	}
 
 }

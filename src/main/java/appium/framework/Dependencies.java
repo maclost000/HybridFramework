@@ -83,6 +83,55 @@ public class Dependencies {
 
 	}
 	
+	public AndroidDriver<AndroidElement> runcloudcapabilities(String appName, Boolean cloud) throws IOException
+	{
+		if(cloud)
+		{
+			return cloudcapabilities( appName);
+		}
+		else
+		{
+			return capabilities( appName);
+		}
+	}
+	
+	
+public static   AndroidDriver<AndroidElement> cloudcapabilities(String appName) throws IOException {
+		
+		FileInputStream fileDir = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\global.properties");
+		Properties prop = new Properties();
+		prop.load(fileDir);
+		
+		
+		
+		DesiredCapabilities cap = new DesiredCapabilities();
+		
+		cap.setCapability("browserstack.user", prop.get("username"));
+    	cap.setCapability("browserstack.key", prop.get("key"));
+    	
+    	cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
+		cap.setCapability("appium:chromeOptions", ImmutableMap.of("w3c", false));
+		//cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 10);
+		if(appName.equalsIgnoreCase("GeneralStoreApp"))
+		{
+    	cap.setCapability("app", "bs://1809086e058ca79354f99b6f9ac03c24fc839441");
+		}
+		else
+		{
+    	cap.setCapability("app", "bs://22a8c0a05deafa0361778c2b7751758f9f2528d0");
+		}
+    	
+		   cap.setCapability("device", "Google Pixel 3");
+		      cap.setCapability("os_version", "9.0");
+
+	
+		
+		
+		 driver = new AndroidDriver<AndroidElement>(new URL("http://hub.browserstack.com/wd/hub"), cap);
+		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+		return driver;
+}
+	
 	public static void getScreenshot(String screenShots) throws IOException
 	{
 		File screenShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

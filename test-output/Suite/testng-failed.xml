@@ -6,12 +6,6 @@
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
   <test thread-count="5" name="EcommerceAppTest(failed)">
-    <parameter name="itemName" value="Shoes"/>
-    <groups>
-      <run>
-        <include name="SmokeTest"/>
-      </run>
-    </groups>
     <classes>
       <class name="appium.framework.WebViewCheckTest">
         <methods>

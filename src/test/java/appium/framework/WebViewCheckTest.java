@@ -21,8 +21,8 @@ public class WebViewCheckTest extends Dependencies{
 	@Test()
 	public void webAutomation() throws InterruptedException, IOException
 	{
-		service=startServer();
-		AndroidDriver<AndroidElement> driver = capabilities("GeneralStoreApp");
+		//service=startServer();
+		AndroidDriver<AndroidElement> driver = runcloudcapabilities("GeneralStoreApp", true);
 		LoginPage login = new LoginPage(driver);
 		login.nameField.sendKeys("brandShoes");
 		
@@ -66,7 +66,7 @@ public class WebViewCheckTest extends Dependencies{
 		
 		driver.findElement(By.xpath("//*[@name='q']")).sendKeys("Automation Testing");
 		driver.findElement(By.xpath("//*[@name='q']")).sendKeys(Keys.ENTER);
-		service.stop();
+		//service.stop();
 	}
 	
 	

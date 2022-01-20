@@ -22,8 +22,8 @@ public class SumOfProductTest extends Dependencies {
 	@Test
 	public void totalValidation() throws InterruptedException, IOException
 	{
-		service=startServer();
-		AndroidDriver<AndroidElement> driver = capabilities("GeneralStoreApp");
+		//service=startServer();
+		AndroidDriver<AndroidElement> driver = runcloudcapabilities("GeneralStoreApp", true);
 	
 		LoginPage login = new LoginPage(driver);
 		login.nameField.sendKeys("brandShoes");
@@ -82,7 +82,7 @@ public class SumOfProductTest extends Dependencies {
 		{
 			System.out.println("Total validation is Failed");
 		}
-		service.stop();
+		//service.stop();
 		
 	}
 

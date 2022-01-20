@@ -18,8 +18,8 @@ public class GesturesTest extends Dependencies {
 	@Test
 	public void tapCheckBox() throws InterruptedException, IOException
 	{
-		service=startServer();
-		AndroidDriver<AndroidElement> driver = capabilities("ApiDemosApp");
+		//service=startServer();
+		AndroidDriver<AndroidElement> driver = runcloudcapabilities("ApiDemosApp", true);
 		
 		HomePage home = new HomePage(driver);
 		home.preference.click();
@@ -28,7 +28,7 @@ public class GesturesTest extends Dependencies {
 		Switch1.Switch.click();
 		
 		driver.findElements(By.id("android:id/switch_widget")).get(0).click();
-		service.stop();
+		//service.stop();
 		
 		
 	}

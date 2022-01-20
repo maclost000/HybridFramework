@@ -16,8 +16,8 @@ public class VerifyLoginTest extends Dependencies {
 	@Test
 	public void verifyLoginFunction() throws InterruptedException, IOException
 	{
-		service=startServer();
-		AndroidDriver<AndroidElement> driver = capabilities("GeneralStoreApp");
+		//service=startServer();
+		AndroidDriver<AndroidElement> driver = runcloudcapabilities("GeneralStoreApp", true);
 		LoginPage login = new LoginPage(driver);
 		login.nameField.sendKeys("brandShoes");
 		
@@ -35,6 +35,6 @@ public class VerifyLoginTest extends Dependencies {
 		Thread.sleep(3000);
 		login.countryName.click();
 		login.submitButton.click();
-		service.stop();
+		//service.stop();
 	}
 }

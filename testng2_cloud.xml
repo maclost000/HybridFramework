@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Paralell Test Suite"  parallel="tests">
+
+
+
+
+
+
+  <test thread-count="5" name="EcommerceAppTest">
+
+    <classes>
+      <class name="appium.framework.CheckHomePageTest"/>
+      <class name="appium.framework.CheckHomePageTest2_cloud"/>
+      <class name="appium.framework.VerifyToastMessageTest"/>
+      <class name="appium.framework.VerifyLoginTest"/>
+      <class name="appium.framework.WebViewCheckTest"/>
+      
+    </classes>
+  </test>
+  <test name="SecTest">
+  <classes>
+   <class name="appium.framework.SumOfProductTest"/>
+     <class name="appium.framework.ScrollAndSelectTest"/>
+      </classes>
+  </test>
+  <test name="APIDemosTest">
+  <classes>
+   <class name="apiDemosApp.AccessWifiTest"/>
+    <class name="apiDemosApp.DragAndDropTest"/>
+     <class name="apiDemosApp.SetTimeTest"/>
+     <class name="apiDemosApp.GesturesTest"/>
+  </classes>
+  </test>
+   <!-- Test -->
+</suite> <!-- Suite -->

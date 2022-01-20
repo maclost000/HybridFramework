@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="appium.framework.WebViewCheckTest">
+      <class name="apiDemosApp.AccessWifiTest">
         <methods>
-          <include name="webAutomation"/>
+          <include name="wifiAccess"/>
         </methods>
-      </class> <!-- appium.framework.WebViewCheckTest -->
+      </class> <!-- apiDemosApp.AccessWifiTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

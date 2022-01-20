@@ -15,15 +15,15 @@ import io.appium.java_client.android.AndroidElement;
 
 public class CheckHomePageTest extends Dependencies {
 	
-	@Parameters({"itemName"})
+	//@Parameters({"itemName"})
 	@Test
-	public void verifyHome(String itemValue) throws InterruptedException, IOException
+	public void verifyHome() throws InterruptedException, IOException
 	{
 		service=startServer();
-		AndroidDriver<AndroidElement> driver = capabilities("GeneralStoreApp");
+		AndroidDriver<AndroidElement> driver = runcloudcapabilities("GeneralStoreApp", true);
 		
 		LoginPage login = new LoginPage(driver);
-		login.nameField.sendKeys(itemValue);
+		login.nameField.sendKeys("Shoes");
 		
 		
 	    driver.hideKeyboard();

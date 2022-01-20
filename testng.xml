@@ -13,7 +13,7 @@
 
 
   <test thread-count="5" name="EcommerceAppTest">
-  <parameter name="itemName" value="Shoes"/>
+
     <classes>
       <class name="appium.framework.CheckHomePageTest"/>
       <class name="appium.framework.VerifyToastMessageTest"/>
